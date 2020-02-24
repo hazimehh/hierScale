@@ -7,7 +7,7 @@ hierScale is scalable toolkit for fitting sparse linear regression models with p
 
 More formally, given a data matrix X of main features and a response vector y, the toolkit fits a **convex relaxation** of the following model:
 
-<img src="formulation.png" width = 450>
+<img src="https://github.com/hazimehh/hierScale/blob/master/formulation.png" width = 450>
 
  where X_i denotes the ith column (feature) of X and * refers to element-wise multiplication. The L0 norms impose sparsity on the coefficients and the constraints enforce SH. See [(Hazimeh and Mazumder, 2020)](https://arxiv.org/abs/1902.01542) for details on how the convex relaxation of the above problem is derived. The optimization is done for a regularization path (i.e., over a grid of lambda_1's and lambda_2's). We use proximal gradient descent (PGD) for optimization, along with novel proximal screening and gradient screening rules, which speed up PGD by over 4900x.
 
