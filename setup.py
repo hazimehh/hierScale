@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='hierScale',
-     version='1.0.2',
+     version='1.0.3',
      scripts=['hierScale'] ,
      author="Hussein Hazimeh and Rahul Mazumder",
      author_email="hazimeh@mit.edu",
