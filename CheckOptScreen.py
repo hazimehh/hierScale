@@ -11,7 +11,7 @@ import networkx as nx
 from gurobipy import *
 from .Structs import *
 
-from numba.errors import NumbaPerformanceWarning
+from numba.core.errors import NumbaPerformanceWarning
 os.environ["NUMBA_WARNINGS"] = "1"
 warnings.filterwarnings("ignore", category=NumbaPerformanceWarning)
 
