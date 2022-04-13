@@ -5,13 +5,12 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='hierScale',
-     version='1.0.3',
-     scripts=['hierScale'] ,
+     version='1.0.6',
      author="Hussein Hazimeh and Rahul Mazumder",
      author_email="hazimeh@mit.edu",
      description="A scalable package for fitting sparse linear regression models with pairwise feature interactions, under strong hierarchy.",
      long_description=long_description,
-   long_description_content_type="text/markdown",
+     long_description_content_type="text/markdown",
      url="https://github.com/hazimehh/hierScale",
      packages=setuptools.find_packages(),
      classifiers=[
